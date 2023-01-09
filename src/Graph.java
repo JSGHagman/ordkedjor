@@ -15,7 +15,6 @@ class Graph {
                     continue;
                 } if (isConnected(words.get(i), words.get(j))) {
                     addEdge(words.get(i), words.get(j));
-
                 }
             }
         }
@@ -37,10 +36,10 @@ class Graph {
             if (index < 0) {
                 return false;
             }
+            word2 = word2.substring(0, index) + word2.substring(index + 1);
         }
         return true;
     }
-
 }
 
 
