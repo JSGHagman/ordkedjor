@@ -23,7 +23,7 @@ class Graph {
 
     private void addEdge(String word1, String word2) {
         adjacencyList.get(word1).add(word2);
-        System.out.println(word1 + " -> " + word2);
+        //System.out.println(word1 + " -> " + word2);
     }
 
     public List<String> getNeighbors(String word) {
